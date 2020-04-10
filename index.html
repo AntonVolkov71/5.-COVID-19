@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID-19</title>
+  <link rel="stylesheet" href="./fonts/fonts.css">
+  <link rel="stylesheet" href="./styles/normalize.css">
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body class="page">
+  <header class="page__header">
+    <span class="logo">SARS-CoV-2</span>
+    <p class="header__stat">
+      <span class="header__description">Всего случаев:</span>
+      <span class="header__total"></span>
+    </p>
+  </header>
+  <div class="content page__wrapper">
+    <h1 class="content__title">Данные о распространении коронавирусной инфекции SARS-CoV-2</h1>
+    <section class="total content__total">
+      <h2 class="total__title">Всего случаев • Live</h2>
+      <p class="total__number"></p>
+    </section>
+    <section class="rating">
+      <h2 class="heading">Топ-10 стран по количеству случаев</h2>
+      <table class="table rating__table">
+        <tr class="table__row table__row_type_heading">
+          <th class="table__title">Страна</th>
+          <th class="table__title">Заболели</th>
+          <th class="table__title">Умерли</th>
+          <th class="table__title">Вылечились</th>
+        </tr>
+      </table>
+      <h2 class="heading heading-russia">Статистика по России</h2>
+      <table class="table rating__table_russia">
+        <tr class="table__row table__row_type_heading">
+          <th class="table__title">Страна</th>
+          <th class="table__title">Заболели</th>
+          <th class="table__title">Умерли</th>
+          <th class="table__title">Вылечились</th>
+        </tr>
+      </table>
+    </section>
+
+    <section class="mortality content__mortality">
+      <h2 class="heading">Самый высокий % смертности</h2>
+      <div class="diagram"></div>
+    </section>
+  </div>
+  <footer class="footer page__footer">
+    <span>&copy; 2020 Источник данных — <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank"
+        class="footer__link">JHU CSSE</a></span>
+  </footer>
+ 
+  <script src='./scripts/Api.js'></script>
+  <script src='./scripts/SortValues.js'></script>
+  <script src='./scripts/Content.js'></script>
+  <script src='./scripts/TopTenCountries.js'></script>
+  <script src='./scripts/Russia.js'></script>
+  <script src='./scripts/Coefficients.js'></script>
+  <script src='./scripts/script.js'></script>
+</body>
+
+</html>
